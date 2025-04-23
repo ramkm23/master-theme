@@ -1,0 +1,126 @@
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+@media(min-width:768px) {
+    #intro .intro-content {
+        width: 60%; 
+    }
+}
+@media (max-width:768px) 
+{
+    #intro .intro-content {
+        padding: 0px 20px;
+    }  
+}
+#intro {
+    padding: 0px;
+    margin: 0px auto;
+    width: 100%;
+    height: 87vh; 
+    position: relative;
+    background: url("../img/intro-carousel/1.jpg") no-repeat;
+    background-size: cover;
+    .intro-content {
+        background: rgb(255 255 255 / 48%);
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        h1 {
+            color:$primary;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        h2 {
+            font-weight: bold;
+            color: $web-black;
+        }
+        h3 {
+            font-weight: bold;
+            color: $web-black;
+        }
+        .btn-get-started, .btn-projects {
+            font-family: "Raleway", sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 10px 32px;
+            border-radius: 2px;
+            transition: 0.5s;
+            margin: 10px;
+            color: #fff;
+        }
+        .btn-get-started {
+            background: $primary;
+            border: 2px solid $web-white;
+        }
+        .btn-get-started:hover {
+            background: $secondary;
+            border: 2px solid $web-white;
+        }
+        .btn-projects {
+            background: $secondary;
+            border: 2px solid $web-white;
+        }
+        .btn-projects:hover {
+            background: $primary;
+            border: 2px solid $web-white;
+        }
+
+    }
+    #intro-carousel {
+        z-index: 8;
+    }
+    #intro-carousel::before {
+        content: '';
+        background-color: rgb(255 255 255 / 20%);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 7;
+    }
+    #intro-carousel .item {
+        width: 100%;
+        height: 87vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition-property: opacity;
+    }
+}
+
+@media (min-width:768px)
+{
+    .intro-content {
+        margin: 44px auto !important;
+        padding: 20px;
+    }
+
+}
